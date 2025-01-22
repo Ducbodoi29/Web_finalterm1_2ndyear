@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../home.css">
+    <link rel="shortcut icon" href="../../LOGI%20NORTHSIDE%20CREW.png">
+    <link rel="stylesheet" href="../css/Register.css">
+    <title>NORTHSIDE CREW</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo_header">
+            <a href="http://127.0.0.1:5500/" class="logo_Northside">NORTHSIDE CREW</a>
+        </div>
+        <ul class="navigate_header">
+            <li> <a href="../../index.php" class="title_header"> HOME</a></li>
+            <li> <a href="../Top.html" class="title_header">TOP</a> </li>
+            <li> <a href="../Bottom.html" class="title_header">BOTTOM</a> </li>
+            <li> <a href="../Accessories.html" class="title_header">ACCESSORIES</a> </li>
+            <li> <a href="../Sale.html" class="title_header"> SALE</a></li>
+        </ul>
+
+        <ul class="tools_header">
+            <li><a href="../src/register/Register.html"><i class="fa-solid fa-user "></i></a></li>
+            <li><i class="fa-solid fa-magnifying-glass icon_while"></i></li>
+        </ul>
+    </header>
+    <div class="content">
+        <div class="content_register">
+            <div class="login_register register_content">
+                <form action="xulydangnhap.php" method="POST">
+                    <h1 class="title_regiter" style="text-align: center">ĐĂNG NHẬP</h1>
+                    <div class="contentResgirer_item">
+                        <input type="text" name="phone" class="input_login" placeholder="Số điện thoại" required>
+                        <input type="password" name="password" class="input_login" placeholder="Mật khẩu" required>
+                    </div>
+                    <button class="btn_login_register" type="submit">Đăng nhập</button>
+                </form>
+            </div>
+            <div class="box_register register_content">
+                <form action="xulydangky.php" method="POST">
+                    <h1 class="title_regiter" style="text-align: center">ĐĂNG KÝ</h1>
+                    <div class="contentResgirer_item">
+                        <div class="name_resgiter">
+                            <input type="text" name="fullname" class="input_regiter_name" placeholder="Họ và tên" required>
+                        </div>
+                        <input type="email" name="email" class="input_login" placeholder="Email" required>
+                        <input type="text" name="phone" class="input_login" placeholder="Số điện thoại" required>
+                        <input type="password" name="password" class="input_login" placeholder="Mật khẩu" required>
+                    </div>
+                    <button class="btn_login_register" type="submit">Đăng ký</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+#content {
+    
+}
+.list-package {
+    width: 16.666%;
+    padding: 40px 25px;
+}
+.list-package h3 {
+    padding: 5px 0 10px 0;
+}
+.list-package ul {
+
+}
+.list-package ul li {
+    list-style-type: none;
+}

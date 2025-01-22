@@ -1,0 +1,114 @@
+/*Tìm kiếm*/
+.search-container {
+    margin: 0 10px;
+}
+
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#search-input {
+    width: 300px;
+    padding: 8px 35px 8px 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+}
+
+#search-button {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #666;
+}
+
+/* CSS cho kết quả tìm kiếm */
+.search-results {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cột đều */
+    gap: 20px; /* Khoảng cách giữa các sản phẩm */
+    padding: 0 20px;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.product-name {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.product-price {
+    color: #e44d26;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.no-results {
+    text-align: center;
+    padding: 20px;
+    grid-column: 1 / -1; /* Đảm bảo thông báo không tìm thấy sẽ chiếm toàn bộ dòng */
+    color: #666;
+}
+/* Nút mua hàng - buy-button */
+.buy-button {
+    background-color: rgba(90, 90, 92, 0.89);
+    color: white;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+.buy-button:hover {
+    background-color: rgba(228, 77, 38, 0.82);
+}
+
+
+/*Phân trang*/
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    padding: 8px 16px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.pagination a.active {
+    background-color: #5a5a5c;
+    color: white;
+}
+
+.pagination a:hover {
+    background-color: #ddd;
+}

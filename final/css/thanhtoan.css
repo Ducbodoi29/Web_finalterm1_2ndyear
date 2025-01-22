@@ -1,0 +1,309 @@
+#content {
+    width: 40%;
+    margin: 10px auto 40px;
+}
+#content h3 {
+    font-size: 33px;
+    text-align: center;
+
+}
+.text{
+    font-family: serif;
+}
+
+#content h2{
+    font-size: 17px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+#content form {
+    display: grid;
+}
+
+.userbox label {
+    font-size: 18px;
+    padding: 10px;
+}
+.userbox input {
+    margin-top: 20px;
+    height: 40px;
+}
+.userbox select {
+    margin-top: 20px;
+    height: 40px;
+    width: 100%; /* Chiếm toàn bộ chiều rộng container */
+    padding: 10px; /* Khoảng cách bên trong */
+    font-size: 13px; /* Kích thước chữ */
+    border: 1px solid #ccc; /* Đường viền nhẹ */
+    border-radius: 5px; /* Bo góc */
+    color: #333; /* Màu chữ */
+    outline: none; /* Loại bỏ đường viền khi chọn */
+    transition: border-color 0.3s ease; /* Hiệu ứng khi hover/focus */
+}
+
+.userbox button {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    display: block;
+    width: 166px;
+    height: 38px;
+    margin: 15px auto 0 auto;
+    background-color: black;
+    color: #fff;
+    border-radius: 0;
+}
+.userbox button:hover {
+    background-color: #ccc;
+    color: #000;
+}
+.userbox a {
+    display: inline-block;
+    width: 166px;
+    text-align: center;
+    margin: auto;
+    text-decoration: underline!important;
+}
+
+
+
+/* --------------------------------- */
+.flex-container {
+    display: flex;
+    gap: 20px; /* Khoảng cách giữa các ô */
+}
+
+.form-group {
+    flex: 1; /* Chia đều không gian cho các ô */
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+
+/* -------------------------------- */
+
+/* Thêm khoảng cách giữa các form-group trong container "diadiem" */
+.flex-container.diadiem .form-group {
+    margin-right: 20px; /* Khoảng cách giữa các dropdown */
+}
+
+/* Đảm bảo container không bị tràn màn hình */
+.flex-container.diadiem {
+    display: flex;
+    flex-wrap: wrap; /* Đảm bảo tự động xuống dòng nếu không đủ chỗ */
+    gap: 20px; /* Khoảng cách giữa các phần tử (thay thế margin nếu cần đồng đều) */
+}
+
+/* Khi disabled: Nhạt đi */
+.userbox select:disabled {
+    background-color: #f5f5f5; /* Màu nền nhạt hơn */
+    color: #aaa; /* Màu chữ nhạt hơn */
+    border-color: #ddd; /* Đường viền nhạt */
+    cursor: not-allowed; /* Thay đổi con trỏ */
+}
+
+/* Khi active: Quay về kiểu gốc */
+.userbox select:not(:disabled) {
+    background-color: #fff; /* Màu nền gốc */
+    color: #333; /* Màu chữ gốc */
+    border-color: #ccc; /* Đường viền gốc */
+}
+
+#tinh_tp, #quan_huyen, #phuong_xa {
+    width: 110%;
+    height: 50px; /* Chiều cao lớn hơn */
+    font-size: 13px; /* Kích thước chữ lớn hơn */
+    padding: 12px; /* Khoảng cách bên trong lớn hơn */
+    border: 2px solid #ccc; /* Tăng độ dày đường viền */
+}
+/* ------------------------------- */
+
+.userbox .form-check {
+    margin-top: 15px;
+    padding: 10px;
+    height: 60%;
+    width: 100%; /* Chiếm toàn bộ chiều rộng container */
+    border: 1px solid #ccc; /* Đường viền nhẹ */
+    border-radius: 5px; /* Bo góc */
+    display: flex;
+    align-items: center;
+    transition: border-color 0.3s ease; /* Hiệu ứng khi hover/focus */
+}
+
+.userbox .form-check:hover {
+    border-color: #28a745; /* Đổi màu viền khi hover */
+}
+
+.userbox .form-check-input {
+    height: 10px;
+    width: 10px; /* Kích thước checkbox */
+    margin-left: 17px; /* Khoảng cách giữa checkbox và nhãn */
+    margin-bottom:19px;
+
+    cursor: pointer;
+    border-color: #000;
+}
+
+.userbox .form-check-label {
+    font-size: 13px; /* Kích thước chữ */
+    color: #333; /* Màu chữ */
+    cursor: pointer;
+}
+
+.userbox .form-check-input:focus {
+    outline: none; /* Loại bỏ đường viền mặc định khi chọn */
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5); /* Hiệu ứng focus */
+}
+/* ------------------------------- */
+
+fieldset {
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc (nếu cần) */
+    flex-direction: column; /* Sắp xếp các phần tử trong fieldset theo cột */
+    text-align: center; /* Căn giữa nội dung text */
+    padding: 20px; /* Tăng khoảng cách bên trong */
+}
+
+.product {
+    display: flex;
+    flex-direction: column; /* Sắp xếp các phần tử trong product theo cột */
+    align-items: center; /* Căn giữa các phần tử con theo chiều ngang */
+    justify-content: center; /* Căn giữa các phần tử con theo chiều dọc */
+}
+.custom-fieldset {
+    width: 75%; /* Chiều rộng 25% */
+    margin: 0 auto; /* Căn giữa */
+    padding: 20px; /* Khoảng cách bên trong */
+    border: 1px solid black; /* Đường viền màu xanh */
+    border-radius: 8px; /* Bo góc */
+}
+.custom-fieldset:hover{
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Tổng thể phần giỏ hàng */
+.detailPayCart {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Tiêu đề phần giỏ hàng */
+.title_detail_cart {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.title_detail_cart .name_detail_cart {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    margin: 0;
+}
+
+/* Nội dung phần chi tiết */
+.content_detailPayCart {
+    padding: 20px;
+}
+
+.box_content_detailPayCart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.lable_detailPayCart {
+    font-size: 14px;
+    color: #555555;
+}
+
+/* Phần giá tiền và nhãn */
+.lable_detailPayCart:first-child {
+    font-weight: bold;
+}
+
+.price_title_box {
+    font-size: 14px;
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+/* Tiêu đề con trong nội dung */
+.title_box_content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.lable_content {
+    font-size: 14px;
+    color: #777777;
+}
+
+/* Phần tổng cộng */
+.box_content_detailPayCart:last-child {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+.box_content_detailPayCart:last-child .lable_detailPayCart {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.box_content_detailPayCart:last-child .lable_detailPayCart:last-child {
+    color: #ff6b6b;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .detailPayCart {
+        padding: 10px;
+    }
+
+    .content_detailPayCart {
+        padding: 10px;
+    }
+
+    .lable_detailPayCart {
+        font-size: 12px;
+    }
+
+    .price_title_box {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,69 @@
+
+/* -------------------------------------------------------content------------------------------------------------------------ */
+#content {
+    padding: 0 185px;
+    text-align: justify;
+    padding-bottom: 55px;
+}
+#content h1 {
+    text-align: center;
+    padding: 10px 0 20px 0;
+}
+#content .log-in {
+    width: 30%;
+    display: inline-block;
+}
+.log-in h3 {
+    font-size: 24px;
+}
+.log-in p {
+    padding: 24px 0;
+}
+.log-in label {
+    width: 100%;
+    display: block;
+}
+.log-in .phone {
+    padding-bottom: 13px;
+}
+.log-in .pass {
+    padding: 8px 0 15px 0;
+}
+.log-in input {
+    width: 100%;
+    height: 40px;
+}
+.log-in button {
+    width: 100%;
+    height: 35px;
+    background-color: #000;
+    border: 0;
+    color: #fff;
+    margin-top: 42px;
+}
+.log-in button:hover {
+    background-color: #ccc;
+    color: #000;
+}
+#content .log-out {
+    width: 30%;
+    float: right;
+    display: inline-block;
+}
+.log-out h3 {
+    font-size: 21px;
+}
+.log-out p {
+    padding: 20px 0;
+}
+.log-out button {
+    width: 100%;
+    height: 35px;
+    background-color: #000;
+    border: 0;
+    color: #fff;
+}
+.log-out button:hover {
+    background-color: #ccc;
+    color: #000;
+}

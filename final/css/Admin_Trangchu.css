@@ -1,0 +1,95 @@
+#header {
+    padding: 2px 30px;
+    border: 3px solid;
+}
+#header>img {
+    width: 190px;
+    margin-left: 60px;
+}
+#header .avatar {
+    display: inline-block;
+    float: right;
+    padding: 8px 45px;;
+}
+.avatar i {
+    font-size: 20px;
+    transform: translate3d(-10px, -5px, 10px);
+
+}
+.avatar img {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid;
+}
+.avatar p {
+    float: right;
+    line-height: 30px;
+    padding-left: 14px;
+}
+
+
+#content {
+    display: flex;
+}
+.menu {
+    background-color: #9a7777;
+    width: 20%;
+}
+.admin {
+    text-align: center;
+    padding: 20px;
+}
+.admin img {
+    width: 70px;
+    height: 70px;
+    border-radius: 45px;
+    border: 1px solid;
+    margin-right: 20px;
+}
+.admin p {
+    display: inline-block;
+    transform: translateY(-30px);
+    margin: 0 3px;
+    margin-right: 10px;
+}
+.admin p.sign_out {
+    background-color: #ccc;
+    padding: 5px;
+}
+.admin p.sign_out:hover {
+    background-color: #999;
+}
+#content ul.nav {
+
+}
+#content ul.nav li {
+    background-color: #000;
+    text-align: center;
+    padding: 20px;
+} 
+#content ul.nav li:hover {
+    background-color: #ccc;
+}
+
+#content ul.nav li a {
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+}
+#content ul.nav li:hover a {
+    color: #000
+}
+ul.nav li a i {
+    padding-right: 10px;
+}
+#content .info {
+    /* background-image: url("https://cdn2.fptshop.com.vn/unsafe/Uploads/images/tin-tuc/172740/Originals/background-la-gi-1.jpg");
+    background-size: cover; */
+    width: 80%;
+    background-image: url("https://cdn2.fptshop.com.vn/unsafe/Uploads/images/tin-tuc/172740/Originals/background-la-gi-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
